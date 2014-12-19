@@ -1,8 +1,0 @@
---cpu Cortex-M4.fp
-".\startup.o"
-".\ssi_nokia5110.o"
-".\pll.o"
-".\matrix keypad4x4.o"
---ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
---info sizes --info totals --info unused --info veneers
---list ".\Matrix KeyPad4x4.map" -o ".\Matrix KeyPad4x4.axf"

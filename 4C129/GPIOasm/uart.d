@@ -1,1 +1,0 @@
-.\uart.o: UART.c

@@ -1,10 +1,0 @@
-Dependencies for Project 'GPIOasm', Target 'Target 1': (DO NOT MODIFY !)
-F (.\GPION.s)(0x54214584)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129--list .\gpion.lst --xref -o .\gpion.o --depend .\gpion.d)
-F (.\startup.s)(0x533ADE3A)(--cpu Cortex-M4 --pd "__EVAL SETA 1" -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\PLL.c)(0x5403D56A)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --signed_chars-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DTM4C1290NCPDT-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
-I (PLL.h)(0x540388BF)
-F (.\SysTickInt.c)(0x54160909)(-c --cpu Cortex-M4 -D__EVAL -g -O0 --apcs=interwork --signed_chars-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DTM4C1290NCPDT-o .\systickint.o --omf_browse .\systickint.crf --depend .\systickint.d)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
-I (tm4c1294ncpdt.h)(0x53F75610)
-I (SysTickInt.h)(0x5416090F)
