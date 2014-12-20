@@ -1,0 +1,27 @@
+Dependencies for Project 'SpaceInvaders', Target 'SpaceInvaders': (DO NOT MODIFY !)
+F (.\startup.s)(0x53A014AC)(--cpu Cortex-M4 --pd "__RTX SETA 1" -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Nokia5110.c)(0x53A02443)(-c --cpu Cortex-M4 -D__RTX -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\nokia5110.o --omf_browse .\nokia5110.crf --depend .\nokia5110.d)
+I (Nokia5110.h)(0x5343F13E)
+F (.\random.s)(0x52866C42)(--cpu Cortex-M4 --pd "__RTX SETA 1" -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary--list .\random.lst --xref -o .\random.o --depend .\random.d)
+F (.\SpaceInvaders.c)(0x5431412F)(-c --cpu Cortex-M4 -D__RTX -D__EVAL -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\spaceinvaders.o --omf_browse .\spaceinvaders.crf --depend .\spaceinvaders.d)
+I (D:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7FD94)
+I (tm4c123gh6pm.h)(0x51D44682)
+I (Nokia5110.h)(0x5343F13E)
+I (Sound.h)(0x53AF42E5)
+I (Random.h)(0x52866C32)
+I (Joystick.h)(0x53BA7200)
+I (TExaS.h)(0x5346456E)
+F (.\TExaS.c)(0x5346481E)(-c --cpu Cortex-M4 -D__RTX -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\texas.o --omf_browse .\texas.crf --depend .\texas.d)
+I (TExaS.h)(0x5346456E)
+F (.\DAC.c)(0x53BC2CF3)(-c --cpu Cortex-M4 -D__RTX -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
+I (Sound.h)(0x53AF42E5)
+I (tm4c123gh6pm.h)(0x51D44682)
+F (.\Joystick.h)(0x53BA7200)()
+F (.\ADC.c)(0x53C2DC46)(-c --cpu Cortex-M4 -D__RTX -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\adc.o --omf_browse .\adc.crf --depend .\adc.d)
+I (Joystick.h)(0x53BA7200)
+I (tm4c123gh6pm.h)(0x51D44682)
+F (.\Sound.h)(0x53AF42E5)()
+F (.\Sound.c)(0x53BC2D11)(-c --cpu Cortex-M4 -D__RTX -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\sound.o --omf_browse .\sound.crf --depend .\sound.d)
+I (Sound.h)(0x53AF42E5)
+I (tm4c123gh6pm.h)(0x51D44682)
+F (.\tm4c123gh6pm.h)(0x51D44682)()
