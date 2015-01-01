@@ -1,0 +1,20 @@
+Dependencies for Project 'ohmmter', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_TM4C129.s)(0x54035E25)(--cpu Cortex-M4 -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129--list .\startup_tm4c129.lst --xref -o .\startup_tm4c129.o --depend .\startup_tm4c129.d)
+F (.\PLL.c)(0x5429FB73)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --signed_chars-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DTM4C1290NCPDT-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (PLL.h)(0x540C757E)
+F (.\tm4c1294ncpdt.h)(0x53F75610)()
+F (.\UART0.c)(0x542887D7)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --signed_chars-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DTM4C1290NCPDT-o .\uart0.o --omf_browse .\uart0.crf --depend .\uart0.d)
+I (UART0.h)(0x542887D5)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (..//tm4c1294ncpdt.h)(0x53F75610)
+F (.\ohmmter.c)(0x54A5AF1B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --signed_chars-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DTM4C1290NCPDT-o .\ohmmter.o --omf_browse .\ohmmter.crf --depend .\ohmmter.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (..//tm4c1294ncpdt.h)(0x53F75610)
+I (Timer.h)(0x549DB852)
+I (UART0.h)(0x542887D5)
+I (PLL.h)(0x540C757E)
+F (.\TimerA.c)(0x549DB852)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --signed_chars-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C129-DTM4C1290NCPDT-o .\timera.o --omf_browse .\timera.crf --depend .\timera.d)
+I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
+I (..//tm4c1294ncpdt.h)(0x53F75610)
+I (Timer.h)(0x549DB852)

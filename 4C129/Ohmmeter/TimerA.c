@@ -1,0 +1,83 @@
+// Mo'meN Ali
+// 24 December, 2014
+// Timer0A module
+// You must enable interrupts in your main() by using EnableInterrupts()
+
+#include <stdint.h>
+#include "..//tm4c1294ncpdt.h"
+#include "Timer.h"
+
+// T0CCP1
+// Pin-PL5
+void T0A_FreqMeasurement(void)
+{
+	SYSCTL_RCGCGPIO_R= SYSCTL_RCGCGPIO_R10;
+	SYSCTL_RCGCTIMER_R= SYSCTL_RCGCTIMER_R0;
+	GPIO_PORTL_AMSEL_R&= 0x20;        
+	GPIO_PORTL_DIR_R&= ~0x20;
+	GPIO_PORTL_AFSEL_R|= 0x20;
+	GPIO_PORTL_DEN_R|= 0x20;
+	GPIO_PORTL_PCTL_R= (GPIO_PORTL_PCTL_R & 0xFF0FFFFF) | 0x00300000; 
+	TIMER0_CTL_R&= ~(TIMER_CTL_TAEN | TIMER_CTL_TBEN);
+	// Timer0A Init for Periodic mode
+	TIMER0_CFG_R= TIMER_CFG_16_BIT;
+	TIMER0_TAMR_R|= TIMER_TAMR_TAMR_PERIOD;
+	TIMER0_TAILR_R= 60000;													// 10ms
+	TIMER0_TAPR_R= 0;
+	TIMER0_IMR_R= TIMER_IMR_TATOIM;
+	TIMER0_ICR_R= TIMER_ICR_TATOCINT;
+	// Timer0B Input capture, Edge count mode
+	TIMER0_TBMR_R|= TIMER_TBMR_TBMR_CAP | TIMER_TBMR_TBCMR;
+  TIMER0_CTL_R= (TIMER0_CTL_R & ~TIMER_CTL_TBEVENT_M) | TIMER_CTL_TBEVENT_POS;	
+	TIMER0_TBILR_R= 0xFFFF;			// Maxmium precision
+	TIMER0_TBMATCHR_R= 0;       
+	TIMER0_IMR_R&= ~0x700;			// Disable all of Timer0B interrupts
+	NVIC_PRI4_R= (NVIC_PRI4_R & 0x00FFFFFF) | 0x40000000;   // Priority 2
+	NVIC_EN0_R= 1 << 19;
+	TIMER0_CTL_R|= TIMER_CTL_TAEN | TIMER_CTL_TBEN;
+}
+
+void T0A_PeriodicInit(uint32_t Period)
+{
+		SYSCTL_RCGCGPIO_R= SYSCTL_RCGCGPIO_R10;
+		SYSCTL_RCGCTIMER_R= SYSCTL_RCGCTIMER_R0;
+		GPIO_PORTL_AMSEL_R&= ~0x10;
+		GPIO_PORTL_AFSEL_R|= 0x10;
+		GPIO_PORTL_DEN_R|= 0x10;
+		GPIO_PORTL_DIR_R|= 0x10;
+		GPIO_PORTL_PCTL_R= (GPIO_PORTL_PCTL_R & ~0x000F0000) | 0x00030000;
+		TIMER0_CTL_R&= ~TIMER_CTL_TBEN;
+		TIMER0_CFG_R|= TIMER_CFG_16_BIT;
+		TIMER0_TAMR_R|= 0x00000002;
+	  TIMER0_TAILR_R= Period - 1;
+		TIMER0_TAPR_R&= 0;
+		TIMER0_IMR_R|= 0x00000001;
+		TIMER0_ICR_R= 0x00000001;	
+		NVIC_PRI4_R&= 0x00FFFFFF;
+		NVIC_EN0_R= 1 << 19;
+		TIMER0_CTL_R|= TIMER_CTL_TAEN;
+}
+
+// Timer0A 16-bit 
+// capture mode / input edge time mode
+void T0A_InputEdgeInit(void)
+{
+	  SYSCTL_RCGCGPIO_R|= SYSCTL_RCGCGPIO_R10;
+	  SYSCTL_RCGCTIMER_R|= SYSCTL_RCGCTIMER_R0;
+	  GPIO_PORTL_PCTL_R= (GPIO_PORTL_PCTL_R & 0) | 0x00030000; 
+    GPIO_PORTL_AFSEL_R|= 0x10;
+	  GPIO_PORTL_DEN_R|= 0x10;   // PL4
+    GPIO_PORTL_DIR_R&= ~0x10;
+		TIMER0_CTL_R&= ~TIMER_CTL_TBEN;  
+		TIMER0_CFG_R|= TIMER_CFG_16_BIT;
+		TIMER0_TAMR_R= (TIMER0_TAMR_R & 0) | TIMER_TAMR_TACMR  
+																			 | TIMER_TAMR_TAMR_CAP;	// Edge Time mode, Capture mode, count down mode
+	  TIMER0_CTL_R&= TIMER_CTL_TBEVENT_POS; 										// Positive Edge
+	  TIMER0_TAILR_R= 0xFFFF - 1;
+    TIMER0_TAPR_R= 0xFF;	
+	  TIMER0_IMR_R|= TIMER_IMR_CAEIM;                           // Enable interrupts
+	  TIMER0_ICR_R|= TIMER_ICR_CAECINT;
+	  TIMER0_CTL_R|= TIMER_CTL_TAEN;
+	  NVIC_PRI4_R|= 0x40000000;
+	  NVIC_EN0_R= 1 << 19; 
+}
