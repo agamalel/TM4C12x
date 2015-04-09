@@ -6,7 +6,12 @@
 
 #include "stdint.h"
 
-// Initialize SysTick Timer, main clock source, Interrupts Enable
+// Initialize SysTick Timer, main clock source, Interrupt Enable
+// Take the period of the Interrupt as Argument
+void SysTickInts_Init(uint32_t period);
+
+// Initialize SysTick Timer, main clock source, Interrupt Disabled
+// Takes no Argument
 void SysTick_Init(void);
 
 // This function is various amount of delay based of t0, t1
