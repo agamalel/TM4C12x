@@ -1,25 +1,0 @@
-Dependencies for Project 'PWM & Edge Trigger Interrupts', Target 'PWM & Edge Trigger Interrupts': (DO NOT MODIFY !)
-F (.\Phan Control.c)(0x55291AB0)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o ".\phan control.o" --omf_browse ".\phan control.crf" --depend ".\phan control.d")
-I (tm4c123gh6pm.h)(0x51D45492)
-I (PLL.h)(0x53EA3658)
-I (Timer0PWM.h)(0x54123008)
-I (UART0.h)(0x55230AA0)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
-I (SysTick.h)(0x5526CC1F)
-F (.\startup.s)(0x5198F13E)(--cpu Cortex-M4 -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
-F (.\PLL.c)(0x54722392)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
-I (PLL.h)(0x53EA3658)
-I (tm4c123gh6pm.h)(0x51D45492)
-F (.\SysTick.c)(0x5526CC5C)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\systick.o --omf_browse .\systick.crf --depend .\systick.d)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
-I (tm4c123gh6pm.h)(0x51D45492)
-I (SysTick.h)(0x5526CC1F)
-F (.\UART0.c)(0x55284FB7)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\uart0.o --omf_browse .\uart0.crf --depend .\uart0.d)
-I (UART0.h)(0x55230AA0)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
-I (tm4c123gh6pm.h)(0x51D45492)
-F (.\Timer0PWM.c)(0x55291ABB)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\timer0pwm.o --omf_browse .\timer0pwm.crf --depend .\timer0pwm.d)
-I (tm4c123gh6pm.h)(0x51D45492)
-I (Timer0PWM.h)(0x54123008)
-I (UART0.h)(0x55230AA0)
-I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
