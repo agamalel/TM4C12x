@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\PWM & Edge Trigger Interrupts.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\PWM & Edge Trigger Interrupts.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Wed Apr 15 20:36:04 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Sun May 03 22:51:22 2015
 <BR><P>
 <H3>Maximum Stack Usage =         20 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -65,7 +65,7 @@ Function Pointers
  <LI><a href="#[f]">GPIOPortC_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[10]">GPIOPortD_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[11]">GPIOPortE_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
- <LI><a href="#[2b]">GPIOPortF_Handler</a> from phan control.o(i.GPIOPortF_Handler) referenced from startup.o(RESET)
+ <LI><a href="#[2b]">GPIOPortF_Handler</a> from fan control.o(i.GPIOPortF_Handler) referenced from startup.o(RESET)
  <LI><a href="#[2c]">GPIOPortG_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[2d]">GPIOPortH_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[43]">GPIOPortJ_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
@@ -125,7 +125,7 @@ Function Pointers
  <LI><a href="#[47]">SSI3_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[9]">SVC_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[29]">SysCtl_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
- <LI><a href="#[c]">SysTick_Handler</a> from phan control.o(i.SysTick_Handler) referenced from startup.o(RESET)
+ <LI><a href="#[c]">SysTick_Handler</a> from fan control.o(i.SysTick_Handler) referenced from startup.o(RESET)
  <LI><a href="#[20]">Timer0A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[21]">Timer0B_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
  <LI><a href="#[22]">Timer1A_Handler</a> from startup.o(RESET) referenced from startup.o(RESET)
@@ -760,11 +760,11 @@ Global Symbols
 
 <P><STRONG><a name="[ca]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[99]"></a>GPIOPortF_EdgeTriggerSW</STRONG> (Thumb, 216 bytes, Stack size 0 bytes, phan control.o(i.GPIOPortF_EdgeTriggerSW))
+<P><STRONG><a name="[99]"></a>GPIOPortF_EdgeTriggerSW</STRONG> (Thumb, 216 bytes, Stack size 0 bytes, fan control.o(i.GPIOPortF_EdgeTriggerSW))
 <BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[2b]"></a>GPIOPortF_Handler</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, phan control.o(i.GPIOPortF_Handler))
+<P><STRONG><a name="[2b]"></a>GPIOPortF_Handler</STRONG> (Thumb, 132 bytes, Stack size 8 bytes, fan control.o(i.GPIOPortF_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GPIOPortF_Handler
 </UL>
 <BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer0APWM_DutyCycle
@@ -779,7 +779,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c]"></a>SysTick_Handler</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, phan control.o(i.SysTick_Handler))
+<P><STRONG><a name="[c]"></a>SysTick_Handler</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, fan control.o(i.SysTick_Handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SysTick_Handler &rArr; UART0_TxUNum &rArr;  UART0_TxUNum (Cycle)
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART0_TxUNum
@@ -835,7 +835,7 @@ Global Symbols
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
 </UL>
 
-<P><STRONG><a name="[8a]"></a>main</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, phan control.o(i.main))
+<P><STRONG><a name="[8a]"></a>main</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, fan control.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4 + Unknown Stack Size
 <LI>Call Chain = main &rArr; UART0_TxString
 </UL>

@@ -1,8 +1,8 @@
 Dependencies for Project 'PWM & Edge Trigger Interrupts', Target 'PWM & Edge Trigger Interrupts': (DO NOT MODIFY !)
-F (.\Phan Control.c)(0x552A6EC8)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o ".\phan control.o" --omf_browse ".\phan control.crf" --depend ".\phan control.d")
+F (.\Fan Control.c)(0x552EB483)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o ".\fan control.o" --omf_browse ".\fan control.crf" --depend ".\fan control.d")
 I (tm4c123gh6pm.h)(0x51D45492)
 I (PLL.h)(0x53EA3658)
-I (Timer0PWM.h)(0x54123008)
+I (Timer0PWM.h)(0x552ECA5E)
 I (UART0.h)(0x55230AA0)
 I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
 I (SysTick.h)(0x5526CC1F)
@@ -18,8 +18,8 @@ F (.\UART0.c)(0x55284FB7)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sec
 I (UART0.h)(0x55230AA0)
 I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)
 I (tm4c123gh6pm.h)(0x51D45492)
-F (.\Timer0PWM.c)(0x552922AE)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\timer0pwm.o --omf_browse .\timer0pwm.crf --depend .\timer0pwm.d)
+F (.\Timer0PWM.c)(0x552EB803)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-Drvmdk -DPART_LM4F120H5QR -DTM4C123GH6PM-o .\timer0pwm.o --omf_browse .\timer0pwm.crf --depend .\timer0pwm.d)
 I (tm4c123gh6pm.h)(0x51D45492)
-I (Timer0PWM.h)(0x54123008)
+I (Timer0PWM.h)(0x552ECA5E)
 I (UART0.h)(0x55230AA0)
 I (D:\Keil\ARM\ARMCC\include\stdint.h)(0x51C80BA4)

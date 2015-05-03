@@ -1,5 +1,5 @@
 --cpu Cortex-M4
-".\phan control.o"
+".\fan control.o"
 ".\startup.o"
 ".\pll.o"
 ".\systick.o"
