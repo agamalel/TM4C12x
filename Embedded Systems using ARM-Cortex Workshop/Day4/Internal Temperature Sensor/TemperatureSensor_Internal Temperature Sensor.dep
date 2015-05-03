@@ -1,0 +1,17 @@
+Dependencies for Project 'TemperatureSensor', Target 'Internal Temperature Sensor': (DO NOT MODIFY !)
+F (.\main.c)(0x553BEA64)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (PLL.h)(0x537F9FCF)
+I (TemperatureSensor.h)(0x553BC3DF)
+I (SSI_Nokia5110.h)(0x553BC756)
+I (tm4c123gh6pm.h)(0x51D44682)
+F (.\TemperatureSensor.c)(0x553BE9F9)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\temperaturesensor.o --omf_browse .\temperaturesensor.crf --depend .\temperaturesensor.d)
+I (TemperatureSensor.h)(0x553BC3DF)
+I (tm4c123gh6pm.h)(0x51D44682)
+I (SSI_Nokia5110.h)(0x553BC756)
+F (.\PLL.c)(0x54722377)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x537F9FCF)
+I (tm4c123gh6pm.h)(0x51D44682)
+F (.\SSI_Nokia5110.c)(0x5543F322)(-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123-DTM4C123GH6PM-o .\ssi_nokia5110.o --omf_browse .\ssi_nokia5110.crf --depend .\ssi_nokia5110.d)
+I (tm4c123gh6pm.h)(0x51D44682)
+I (SSI_Nokia5110.h)(0x553BC756)
+F (.\startup.s)(0x53D98C44)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\TI\TM4C123--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)

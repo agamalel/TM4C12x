@@ -1,0 +1,20 @@
+Dependencies for Project 'Piano', Target 'main': (DO NOT MODIFY !)
+F (.\main.c)(0x554407CF)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\main.o --omf_browse .\main.crf --depend .\main.d)
+I (..\..\..\..//tm4c123gh6pm.h)(0x51D45492)
+I (Sound.h)(0x535FBC12)
+I (Piano.h)(0x5409C1D5)
+I (PLL.h)(0x5409CDDA)
+F (.\Piano.c)(0x554406CD)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\piano.o --omf_browse .\piano.crf --depend .\piano.d)
+I (Piano.h)(0x5409C1D5)
+I (..\..\..\..//tm4c123gh6pm.h)(0x51D45492)
+F (.\DAC.c)(0x554406CD)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\dac.o --omf_browse .\dac.crf --depend .\dac.d)
+I (DAC.h)(0x5409928C)
+I (tm4c123gh6pm.h)(0x51D45492)
+F (.\PLL.c)(0x54722384)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\pll.o --omf_browse .\pll.crf --depend .\pll.d)
+I (PLL.h)(0x5409CDDA)
+I (tm4c123gh6pm.h)(0x51D45492)
+F (.\startup.s)(0x53092C02)(--cpu Cortex-M4 -g --apcs=interwork -I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary--list .\startup.lst --xref -o .\startup.o --depend .\startup.d)
+F (.\Sound.c)(0x5544073B)(-c --cpu Cortex-M4 -g -O0 --apcs=interwork --split_sections --signed_chars -I.. -I..\..\..-I D:\Keil\ARM\RV31\INC-I D:\Keil\ARM\CMSIS\Include-I D:\Keil\ARM\Inc\Luminary-Drvmdk -DPART_LM4F120H5QR -o .\sound.o --omf_browse .\sound.crf --depend .\sound.d)
+I (Sound.h)(0x535FBC12)
+I (DAC.h)(0x5409928C)
+I (..\..\..\..//tm4c123gh6pm.h)(0x51D45492)
